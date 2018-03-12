@@ -6,6 +6,9 @@ This repo contains documentation, code examples, and exercises for an introducti
 
 The code for this course is Python 3 and is targeted at a Raspberry Pi that has a Sense HAT.
 
+## Presentation Material
+A course overview, detailed outline, and prestnation slides are available on [Google Drive](https://drive.google.com/open?id=1_RB1govPvCtqE3c3gReNsyUkUMzxBLm4) 
+
 ## Set Up
 How to set up common environments to use the examples and exercises for the course.
 
