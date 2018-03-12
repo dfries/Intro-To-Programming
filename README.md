@@ -6,13 +6,6 @@ This repo contains documentation, code examples, and exercises for an introducti
 
 The code for this course is Python 3 and is targeted at a Raspberry Pi that has a Sense HAT.
 
-## TODO
-List of items still to do in the project
-* Add additional comments and explanation to all code examples
-* Create the grapical scene for rocket display main program module
-* Create the launchpad for the rocket display graphical scene
-* Add code for the launch that lifts the rocket off int he rocket display module
-
 ## Set Up
 How to set up common environments to use the examples and exercises for the course.
 
