@@ -4,17 +4,14 @@ the remaining exercises. It will use the Sense HAT as both an input
 and an output device. It will display and launch a virtual rocket.
 
 In this file we will:
- - Review the requiremnts for the launch program
- - Use comments to lay out a genral algoritm
- - Display the rocet on the laucnh pad
+ - Review the requirements for the launch program
+ - Use comments to lay out a general algorithm
+ - Display the rocket on the launch pad
 '''
 # These import statments bring in other Python modules.
-# The first will allow us to access the Sense HAT functions.
-# The second will allows us to pause our program
-# The third will allow us to display our rocket
-from sense_hat import SenseHat
-from time import sleep
-from rocket_display import delta_iv_heavy
+from sense_hat import SenseHat             # Allow access to the Sense HAT functions
+from time import sleep                     # Allows us to pause our program
+from rocket_display import delta_iv_heavy  # Allow us to display our rocket
 
 # Requirements for this program:
 # 1. Display rocket on the launch pad
@@ -22,10 +19,17 @@ from rocket_display import delta_iv_heavy
 # 3. Display a countdown to launch from 9 to 0
 # 4. Launch rocket at end of countdown if conditions are nominal
 
+# Create a Sense HAT interface
+sense = SenseHat()
+
 # Algorithm
 
-# TODO Students should add some additional comments here
-# The comments should lay out the structure of the program and cover
-# all the requiremnts of the program
+# Use rocket display module to draw rocket on the launchpad
+delta_iv_heavy.display_launchpad()
+delta_iv_heavy.display_rocket()
+
+# TODO Students should add additional comments here
+# The comments should lay out the remaining structure of the program
+# to cover all the requirements of the program
 
 

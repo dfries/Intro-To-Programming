@@ -3,10 +3,8 @@ This file will use the Sense HAT as an output device. It will
 dislpay a test string and numeric value on the Sense HAT's LED matrix.
 '''
 # These import statments bring in other Python modules.
-# The first will allow us to access the Sense HAT functions.
-# The second will allows us to pause our program
-from sense_hat import SenseHat
-from time import sleep
+from sense_hat import SenseHat # Provides access the Sense HAT functions
+from time import sleep         # Provides pause function for our program
 
 # String variable assigned the hello world message
 message = "hello, world"
@@ -24,9 +22,10 @@ green = [0,255,0]
 blue = [0,0,255]
 
 # Display the text string on the LED display using the 
-# Sense HAT's show_meesage function. Example:
-# sense.show_message(message, text_colour=red)
-# TODO Sthudents should add their own show_message here
+# Sense HAT's show_meesage function.
+# Example: sense.show_message(message, text_colour=red)
+# TODO Students should add their own show_message here
+
 
 # Wait the number of seconds passed to sleep
 sleep(2)
