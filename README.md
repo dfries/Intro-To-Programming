@@ -29,7 +29,8 @@ Instead:
    1. sudo apt install python3-setuptools
    2. sudo apt install python3-pip
    3. sudo pip install sense_emu (may throw errors building bdist_wheel during install, but it seemed to work ok)
-6. Test that the install worked by launching the Sense HAT Emulator GUI from the command line with: sense_emu_gui
+6. Test that the install worked by launching the Sense HAT Emulator GUI from the command line with: `sense_emu_gui &`
+7. Any source in this project can be run with the emulator by changing import statments to: `from sense_emu import SenseHat` 
 
 ## Reference Information
 
