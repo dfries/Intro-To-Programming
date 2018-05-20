@@ -4,13 +4,13 @@ launch pad and provide the visual for the rocket launch
 '''
 
 def display_launchpad():
-    print("Displaying launchpad")
-	# TODO
+    print("TODO: Displaying launchpad")
+    # TODO
 
 def display_rocket():
-    print("Displaying rocket")
+    print("TODO: Displaying rocket")
     # TODO
 
 def launch_rocket():
-    print("Launching roecket")
+    print("TODO: Launching rocket")
     # TODO

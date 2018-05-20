@@ -22,6 +22,7 @@ original_message = "hello, world"
 pi = 3.14159
 
 # Add a new variable decleration here and assign your name as the value
+# Example: my_name = "Alexander Hamilton"
 
 
 ## Print statements ##
