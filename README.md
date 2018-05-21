@@ -41,6 +41,10 @@ Instead:
 * [Python 3 Documentation](https://docs.python.org/3/)
 * [Python Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide)
 
+### Pygame
+* [Pygame](https://www.pygame.org)
+* [Invent with Python](http://inventwithpython.com/pygames)
+
 ### Raspberry Pi
 * [Raspberry Pi Foundation](https://www.raspberrypi.org/)
 * [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
