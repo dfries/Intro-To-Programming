@@ -26,9 +26,10 @@ Instead:
 3. Create a VM in Virtual Box with Linux ISO (note: may need to change BIOS settings for 64 bit virtualization)
 4. Install the guest addon additions to Linux VM (under Devices in VirtualBox menu)
 5. Install need Python libraries to Linux VM:
-   1. sudo apt install python3-setuptools
-   2. sudo apt install python3-pip
-   3. sudo pip install sense_emu (may throw errors building bdist_wheel during install, but it seemed to work ok)
+   1. `sudo apt install python3-setuptools`
+   2. `sudo apt install python3-pip`
+   3. `sudo pip3 install sense_emu` (may throw errors building bdist_wheel during install, but it seemed to work ok)
+   4. `sudo pip3 install pygame`
 6. Test that the install worked by launching the Sense HAT Emulator GUI from the command line with: `sense_emu_gui &`
 7. Any source in this project can be run with the emulator by changing import statments to: `from sense_emu import SenseHat` 
 
