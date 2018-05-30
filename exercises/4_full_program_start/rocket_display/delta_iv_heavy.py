@@ -1,5 +1,5 @@
 '''
-This file contains the functions needed to display a rocket on the 
+This file contains the functions needed to display a rocket on the
 launch pad and provide the visual for the rocket launch
 '''
 
@@ -12,10 +12,10 @@ DISPLAYSURF.fill((0,0,0)) # black, change to blue?
 pygame.display.set_caption("Rocket Launch")
 
 # only calling one at a tiem for now, normally in a loop
-pygame.display.update() 
+pygame.display.update()
 
 def display_launchpad():
-    
+
     print("TODO: Displaying launchpad")
     # TODO
 

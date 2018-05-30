@@ -21,7 +21,7 @@ red = [255,0,0]
 green = [0,255,0]
 blue = [0,0,255]
 
-# Display the text string on the LED display using the 
+# Display the text string on the LED display using the
 # Sense HAT's show_meesage function.
 # Example: sense.show_message(message, text_colour=red)
 # TODO Students should add their own show_message here
@@ -30,7 +30,7 @@ blue = [0,0,255]
 # Wait the number of seconds passed to sleep
 sleep(2)
 
-# Display a numeric value on the LED display using the 
+# Display a numeric value on the LED display using the
 # Sense HAT's show_letter function. Example:
 # sense.show_letter(str(display_number), text_colour=blue)
 # TODO Students should add their own show_letter here
