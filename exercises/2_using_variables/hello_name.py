@@ -32,9 +32,9 @@ pi = 3.14159
 print(original_message)
 
 # Print out a numeric value. In this example we start with a string of
-# 'pi =' to help give some context to what is printing. We then concatenate
-# the value of the pi variable with the '+'
-print("pi =", + pi)
+# "pi =" to help give some context to what is printing. Next a comma ','
+# and pi, will result in the value of pi being printed after a space.
+print("pi =", pi)
 
 # Add a new print statment here that uses the new vairable you created to print
 # out a custom hello message using your name
