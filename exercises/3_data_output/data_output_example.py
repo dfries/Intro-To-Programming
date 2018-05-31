@@ -1,5 +1,5 @@
 '''
-This file provides an example of how to use the Sense HAT as an output device. 
+This file provides an example of how to use the Sense HAT as an output device.
 It will dislpay a test string and numeric value on the Sense HAT's LED matrix
 '''
 # These import statments bring in other Python modules.

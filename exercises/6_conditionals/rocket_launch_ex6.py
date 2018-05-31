@@ -5,7 +5,7 @@ Sense HAT as both an input and an output device. It will display and
 launch a virtual rocket.
 
 In this file we:
- - Verify the ranges of the humidity and temperature 
+ - Verify the ranges of the humidity and temperature
 '''
 # These import statments bring in other Python modules.
 from sense_hat import SenseHat             # Allow access to the Sense HAT functions

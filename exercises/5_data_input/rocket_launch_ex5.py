@@ -6,7 +6,7 @@ launch a virtual rocket.
 
 In this file we:
  - Read and store the temperature value from the Sense HAT
- - Read and store the humidity value from the Sense HAT  
+ - Read and store the humidity value from the Sense HAT
 '''
 # These import statments bring in other Python modules.
 from sense_hat import SenseHat             # Allow access to the Sense HAT functions
