@@ -21,7 +21,7 @@ def display_launchpad():
 
 def display_rocket():
 
-    rocketImg = pygame.image.load("rocket_display/delta_iv_heavy.png")
+    rocketImg = pygame.image.load("../rocket_display/delta_iv_heavy.png")
     rocketX = 150
     rocketY = 60
     DISPLAYSURF.blit(rocketImg, (rocketX, rocketY))

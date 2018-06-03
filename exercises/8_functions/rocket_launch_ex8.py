@@ -12,7 +12,11 @@ In this file we:
 # These import statments bring in other Python modules.
 from sense_hat import SenseHat             # Allow access to the Sense HAT functions
 from time import sleep                     # Allows us to pause our program
-from rocket_display import delta_iv_heavy  # Allow us to display our rocket
+
+# Allow us to display our rocket
+import sys
+sys.path.append("..")
+from rocket_display import delta_iv_heavy
 
 # Requirements for this program:
 # 1. Display rocket on the launch pad
