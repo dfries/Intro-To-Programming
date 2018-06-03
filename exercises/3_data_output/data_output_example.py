@@ -3,7 +3,12 @@ This file provides an example of how to use the Sense HAT as an output device.
 It will dislpay a test string and numeric value on the Sense HAT's LED matrix
 '''
 # These import statments bring in other Python modules.
-from sense_hat import SenseHat # Provides access the Sense HAT functions
+try:
+    from sense_hat import SenseHat # Provides access the Sense HAT functions
+except Exception as e:
+    print(e)
+    print("Using emulator instead")
+    from sense_emu import SenseHat             # Allow access to the Sense HAT functions
 from time import sleep         # Provides pause functions for our program
 
 # String variable assigned the hello world message

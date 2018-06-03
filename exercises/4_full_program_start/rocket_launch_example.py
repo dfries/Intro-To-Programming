@@ -10,7 +10,13 @@ In this file we will:
  - Display the rocket on the launch pad
 '''
 # These import statments bring in other Python modules.
-from sense_emu import SenseHat             # Allow access to the Sense HAT functions
+# Load the module or the hardware Sense HAT, or the emulator
+try:
+    from sense_hat import SenseHat             # Allow access to the Sense HAT functions
+except Exception as e:
+    print(e)
+    print("Using emulator instead")
+    from sense_emu import SenseHat             # Allow access to Sense HAT emulator
 from time import sleep                     # Allows us to pause our program
 
 # Allow us to display our rocket

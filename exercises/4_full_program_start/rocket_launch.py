@@ -9,7 +9,7 @@ In this file we will:
  - Display the rocket on the launch pad
 '''
 # These import statments bring in other Python modules.
-from sense_hat import SenseHat             # Allow access to the Sense HAT functions
+from sense_emu import SenseHat             # Allow access to the Sense HAT functions
 from time import sleep                     # Allows us to pause our program
 
 # Allow us to display our rocket
