@@ -9,8 +9,8 @@ In this file we:
  - Read and store the humidity value from the Sense HAT
 '''
 # These import statments bring in other Python modules.
-from sense_hat import SenseHat             # Allow access to the Sense HAT functions
-from time import sleep                     # Allows us to pause our program
+from sense_hat import SenseHat  # Allow access to the Sense HAT functions
+from time import sleep          # Allows us to pause our program
 
 # Allow us to display our rocket
 import sys
@@ -37,8 +37,8 @@ temp_deg_C = sense.get_temperature()
 relative_humidity = sense.get_humidity()
 
 # Verify values read in
-print("Read temperature: %s C" % temp_deg_C)
-print("Read humidity %s %%rH" % relative_humidity)
+print("Temperature reading (deg C): ", temp_deg_C)
+print("Humidity reading (%rH): ", relative_humidity)
 
 # Verify that the temperature is between ?? and ?? degrees Celsius
 # Verify that the percentage of relative humidity is between ?? and ?? percent
@@ -49,4 +49,6 @@ print("Read humidity %s %%rH" % relative_humidity)
 # Once the countdown completes and the environmental conditions are
 # verified as good, use the rocket display module to launch the rocket
 
-
+sleep(10)
+sense.clear()
+delta_iv_heavy.end()

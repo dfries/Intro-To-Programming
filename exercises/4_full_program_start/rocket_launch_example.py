@@ -10,8 +10,8 @@ In this file we will:
  - Display the rocket on the launch pad
 '''
 # These import statments bring in other Python modules.
-from sense_emu import SenseHat             # Allow access to the Sense HAT functions
-from time import sleep                     # Allows us to pause our program
+from sense_hat import SenseHat  # Allow access to the Sense HAT functions
+from time import sleep          # Allows us to pause our program
 
 # Allow us to display our rocket
 import sys
@@ -24,7 +24,8 @@ from rocket_display import delta_iv_heavy
 # 3. Display a countdown to launch from 9 to 0
 # 4. Launch rocket at end of countdown if conditions are nominal
 
-# Algorithm
+# Create a Sense HAT interface
+sense = SenseHat()
 
 # Use rocket display module to draw rocket on the launchpad
 delta_iv_heavy.display_launchpad()
@@ -41,7 +42,9 @@ delta_iv_heavy.display_rocket()
 
 # Once the countdown completes and the environmental conditions are
 # verified as good, use the rocket display module to launch the rocket
-sleep(20)
+
+sleep(10)
+sense.clear()
 delta_iv_heavy.end()
 
 
