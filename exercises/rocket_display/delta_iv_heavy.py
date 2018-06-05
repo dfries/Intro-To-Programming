@@ -4,6 +4,7 @@ launch pad and provide the visual for the rocket launch
 '''
 
 import pygame
+import os
 from pygame.locals import *
 from time import sleep
 
@@ -82,6 +83,7 @@ def end():
     pygame.quit()
 
 pygame.init()
+os.environ["SDL_VIDEO_WINDOW_POS"] = "50,30"
 DISPLAYSURF = pygame.display.set_mode((500,700))
 pygame.display.set_caption("Rocket Launch")
 launchpadImg = None
