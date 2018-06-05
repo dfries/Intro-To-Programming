@@ -33,7 +33,8 @@ blue = [0,0,255]
 sleep(2)
 
 # Display a numeric value on the LED display using the
-# Sense HAT's show_letter function. Example:
+# Sense HAT's show_letter function. The number must be turned into
+# a string like str(1) Example:
 # sense.show_letter(str(display_number), text_colour=blue)
 # TODO Students should add their own show_letter here
 

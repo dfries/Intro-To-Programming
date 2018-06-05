@@ -12,7 +12,18 @@ In this file we:
 # These import statments bring in other Python modules.
 from sense_hat import SenseHat             # Allow access to the Sense HAT functions
 from time import sleep                     # Allows us to pause our program
-from rocket_display import delta_iv_heavy  # Allow us to display our rocket
+
+# Allow us to display our rocket
+import sys
+sys.path.append("..")
+from rocket_display import delta_iv_heavy
+
+# Set up some Sense HAT display colors. Colors are represented as
+# lists containg R-G-B (red, green, blue) values between 0 and 255.
+white   = [255, 255,  255]
+green   = [  0, 255,    0]
+yellow  = [255, 255,    0]
+red     = [255,   0,    0]
 
 # Requirements for this program:
 # 1. Display rocket on the launch pad
@@ -58,12 +69,19 @@ env_good = (temp_good and humidity_good)
 # Count down from 9 to 0
 # Display each number on the Sense HAT LED dsiplay
 countdown_complete = False
-for i in reversed(range(0, 10)):  # Need reversed() to count down
-    sense.show_letter(str(i))
+letter_color = white
+for i in range(9, -1, -1):
+    if i == 3:
+        # Ignite the engines before takeoff
+        delta_iv_heavy.enginesOn(True)
+        letter_color = red
+    if i == 1:
+        letter_color = yellow
     if i == 0:
         countdown_complete = True
-    else:
-        sleep(1.0)
+        letter_color = green
+    sense.show_letter(str(i), text_colour=letter_color)
+    sleep(1.0)
 
 # Once the countdown completes and the environmental conditions are
 # verified as good, use the rocket display module to launch the rocket
@@ -73,3 +91,4 @@ if env_good and countdown_complete:
 else:
     # Abort the launch
     print("Aborting Launch Sequence")
+    delta_iv_heavy.enginesOn(False)
