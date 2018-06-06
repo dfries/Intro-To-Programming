@@ -31,7 +31,7 @@ sense = SenseHat()
 delta_iv_heavy.display_launchpad()
 delta_iv_heavy.display_rocket()
 
-#TODO Create and evironment monitoring function here that
+#TODO Create an evironment monitoring function here that
 # returns True if all environment conditions are good 
 # Example:
 '''
@@ -66,7 +66,7 @@ else:
 
 # Overall environment status is a combination of temperature and humidity.
 # If either if False the environment good status will also be set to False.
-# TODO mvoe this line to be part of the function and chage it to return value
+# TODO move this line to be part of the function and change it to return value
 env_good = (temp_good and humidity_good)
 
 # Count down from 9 to 0
