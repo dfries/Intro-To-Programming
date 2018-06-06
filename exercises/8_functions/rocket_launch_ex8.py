@@ -31,6 +31,15 @@ sense = SenseHat()
 delta_iv_heavy.display_launchpad()
 delta_iv_heavy.display_rocket()
 
+#TODO Create and evironment monitoring function here that
+# returns True if all environment conditions are good 
+# Example:
+'''
+def env_nominal():
+    # Move all environemnt reading, status checking, and messages under this function
+    return (temp_good and humidity_good)
+'''
+
 # Read and store the temperature from the Sense HAT
 temp_deg_C = sense.get_temperature()
 
@@ -56,7 +65,8 @@ else:
     print("WARNING: Humidity is outside nominal: ", relative_humidity)
 
 # Overall environment status is a combination of temperature and humidity.
-# If either if False the envirnment good status will also be set to False.
+# If either if False the environment good status will also be set to False.
+# TODO mvoe this line to be part of the function and chage it to return value
 env_good = (temp_good and humidity_good)
 
 # Count down from 9 to 0
@@ -71,11 +81,11 @@ for i in range(9, -1, -1):
 
 # Once the countdown completes and the environmental conditions are
 # verified as good, use the rocket display module to launch the rocket
-# TODO Ad an if/else block that verfies lauch conditions and laucnhes the 
+# TODO Add an if/else block that verfies lauch conditions and laucnhes the 
 # rocket if all conditions are good or aborts the laucnh with a message
 '''
 Example:
-if env_good and countdown_complete:
+if env_nominal() and countdown_complete:
     # Launch the rocket with delta_iv_heavy functions 
     enginesOn(True) and launch_rocket()
 else:
