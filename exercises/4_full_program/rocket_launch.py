@@ -6,9 +6,9 @@ and an output device. It will display and launch a virtual rocket.
 In this file we will do:
  - Exercise 4 - Read input for environmental conditions
  - Exercise 5 - Use conditional logic (if/else) to verify env conditions
- - Exercise 6 - Create a for loop for the rocket countdown and output that to the SenseHAT
- - Exercise 7 -  Use functions to launch out rocket
-
+ - Exercise 6 - Create a for loop for the rocket countdown and output
+                the countdown to the SenseHAT
+ - Exercise 7 - Use functions to launch our rocket
 '''
 # These import statments bring in other Python modules.
 from sense_emu import SenseHat  # Allow access to the Sense HAT functions
