@@ -1,12 +1,12 @@
 '''
-This file provides an example of the final step of a rocket launch program
-that will be developed over the remaining exercises. It will use the
-Sense HAT as both an input and an output device. It will display and
-launch a virtual rocket.
+This file provides an example of an advanced rocket launch program.
+It uses the Sense HAT as both an input and an output device. It will 
+display and launch a virtual rocket.
 
 In this file we:
- - Organize the Program into functions
- - Verify launch conditions
+ - Create an env_nominal() function
+ - Edithe the code to use the new function
+ - Edit the for loop to add aditional colors
  - Launch the rocket
 '''
 # These import statments bring in other Python modules.
