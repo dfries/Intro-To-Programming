@@ -14,7 +14,6 @@ variable_name = value
 '''
 ##  Variables ##
 # In this section of the code declare variables and assign values
-
 # Example of a string variable assigned the orginal hello world message
 original_message = "hello, world"
 
@@ -22,12 +21,12 @@ original_message = "hello, world"
 pi = 3.14159
 
 # Add a new variable decleration here and assign your name as the value
-# Example: my_name = "Alexander Hamilton"
-
+'''
+Example: my_name = "Alexander Hamilton"
+'''
 
 ## Print statements ##
 # This section of the code will use the vairables to alter what is printed
-
 # Print hello, world using a variable
 print(original_message)
 
@@ -38,4 +37,7 @@ print("pi =", pi)
 
 # Add a new print statment here that uses the new vairable you created to print
 # out a custom hello message using your name
+'''
+Example: print("Hello,", my_name)
+'''
 
