@@ -22,11 +22,12 @@ color = [255,0,0]
 
 # Display the text string on the LED display using the
 # Sense HAT's show_meesage function.
-# text_colour isn't a typo, the Raspberry Pi originated from the United Kingdom,
+# text_colour isn't a typo, the Raspberry Pi originated in the UK,
 # and must use their spelling for color.
 # TODO Students should add their own show_message here
 '''
-Example: sense.show_message(message, text_colour=color)
+Example:
+sense.show_message(message, text_colour=color)
 '''
 
 # Wait the number of seconds passed to sleep
