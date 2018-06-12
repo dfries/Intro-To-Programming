@@ -2,7 +2,7 @@
 Introduction to Programming course with Python and Raspberry Pi
 
 ## Overview
-This repo contains documentation, code examples, and exercises for an introduction to programming course aimed at middle school aged students. It is intended for students with no programming experience and should last between 1 and 2 hours.
+This repo contains documentation, code examples, and exercises for an introduction to programming course aimed at middle school aged students. It is intended for students with no programming experience and should last between 1 and 2 hours. This branch (abridged_class) cleans up and shortens the examples to make the class move along quicker.
 
 The code for this course is Python 3 and is targeted at a Raspberry Pi that has a Sense HAT.
 
