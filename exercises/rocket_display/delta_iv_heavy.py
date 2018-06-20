@@ -39,13 +39,17 @@ def display_rocket(x = 0, y = 0):
 def display_flames(x = 0, y = 0):
 
     global showFlames
+    global flameState
+    # Give a flickering effect while launching by turning on every other frame
+    if x != 0 or y != 0:
+        flameState = not flameState
+        if flameState:
+            return
     if showFlames:
         global flamesImg
         flamesX = 162 + x
         flamesY = 677 + y
         DISPLAYSURF.blit(flamesImg, (flamesX, flamesY))
-
-        pygame.display.update()
 
 def enginesOn(running):
     global showFlames
@@ -75,8 +79,8 @@ def launch_rocket():
             rocketImg = pygame.transform.rotate(rocketImg, 1)
         fill_background()
         display_launchpad()
-        display_rocket(x, y)
         display_flames(x, y)
+        display_rocket(x, y)
         sleep(.033)
 
 def end():
@@ -90,4 +94,5 @@ launchpadImg = None
 rocketImg = None
 flamesImg = None
 showFlames = False
+flameState = False
 init()

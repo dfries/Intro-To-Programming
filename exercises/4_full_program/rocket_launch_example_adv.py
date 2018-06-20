@@ -5,7 +5,7 @@ display and launch a virtual rocket.
 
 In this file we:
  - Create an env_nominal() function
- - Edithe the code to use the new function
+ - Edit the code to use the new function
  - Edit the for loop to add aditional colors
  - Launch the rocket
 '''
